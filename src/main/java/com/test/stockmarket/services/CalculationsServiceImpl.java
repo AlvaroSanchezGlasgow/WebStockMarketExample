@@ -20,7 +20,7 @@ public class CalculationsServiceImpl implements CalculationService {
 	Trades trade;
 
 	@Override
-	public Stocks calculateDividendYieldAndPeRatio(String Product, int value, Map<String,Double> oMapPrices) {
+	public Stocks calculateDividendYieldAndPeRatio(String Product, double value, Map<String,Double> oMapPrices) {
 
 		Stocks stock = new Stocks();
 
@@ -152,7 +152,7 @@ public class CalculationsServiceImpl implements CalculationService {
 	}
 
 	@Override
-	public Trades recordTrade(String operationType, Map<String, Integer> oMapInputValues,Map<String, Double> oMapPrices) {
+	public Trades recordTrade(String operationType, Map<String, Double> oMapInputValues,Map<String, Double> oMapPrices) {
 
 		trade = new Trades();
 		trade.setOperationType(operationType);
@@ -189,12 +189,12 @@ public class CalculationsServiceImpl implements CalculationService {
 		return result;
 	}
 
-	public Double calculateVolumeWeighStock(Map<String, Integer> oMapInputValues, List<Trades> listTradesRegistration) {
+	public Double calculateVolumeWeighStock(Map<String, Double> oMapInputValues, List<Trades> listTradesRegistration) {
 
 		double aux = 0.0;
-		int minuts=0;
+		
 		int diferen=0;
-		int ammount=(oMapInputValues.get("ALE") + oMapInputValues.get("GIN") + oMapInputValues.get("POP")
+		double ammount=(oMapInputValues.get("ALE") + oMapInputValues.get("GIN") + oMapInputValues.get("POP")
 		+ oMapInputValues.get("TEA") + oMapInputValues.get("JOE"));
 		if (ammount==0) {
 			ammount=1;

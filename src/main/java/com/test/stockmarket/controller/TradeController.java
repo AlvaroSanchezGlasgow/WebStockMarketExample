@@ -57,11 +57,11 @@ public class TradeController {
 			@RequestParam(value="JoePrice") String sJoePrice,@RequestParam(value="PopPrice") String sPopPrice,@RequestParam(value="AlePrice") String sAlePrice,
 			@RequestParam(value="GinPrice") String sGinPrice,@RequestParam(value="TeaPrice") String sTeaPrice) throws Exception {
 		
-		int teaAmmount=Utils.convertStringToNumber(sTeaAmmount);
-		int popAmmount=Utils.convertStringToNumber(sPopAmmount);
-		int aleAmmount=Utils.convertStringToNumber(sAleAmmount);
-		int ginAmmount=Utils.convertStringToNumber(sGinAmmount);
-		int joeAmmount=Utils.convertStringToNumber(sJoeAmmount);
+		double teaAmmount=Utils.convertStringToDouble(sTeaAmmount);
+		double popAmmount=Utils.convertStringToDouble(sPopAmmount);
+		double aleAmmount=Utils.convertStringToDouble(sAleAmmount);
+		double ginAmmount=Utils.convertStringToDouble(sGinAmmount);
+		double joeAmmount=Utils.convertStringToDouble(sJoeAmmount);
 		
 		double TeaPrice=Utils.convertStringToDouble(sTeaPrice);
 		double popPrice=Utils.convertStringToDouble(sPopPrice);
@@ -69,7 +69,7 @@ public class TradeController {
 		double ginPrice=Utils.convertStringToDouble(sGinPrice);
 		double joePrice=Utils.convertStringToDouble(sJoePrice);
 		
-		Map<String,Integer> oMapInputValues = new HashMap<String,Integer>();
+		Map<String,Double> oMapInputValues = new HashMap<String,Double>();
 		oMapInputValues.put("TEA", teaAmmount);
 		oMapInputValues.put("POP", popAmmount);
 		oMapInputValues.put("ALE", aleAmmount);

@@ -8,13 +8,13 @@ import com.test.stockmarket.beans.Trades;
 
 public interface CalculationFacade {
 
-	Trades recordTrade(String operationType, Map<String, Integer> oMapPrices, Map<String, Double> oMapPrices2);
+	Trades recordTrade(String operationType, Map<String, Double> oMapAmmount, Map<String, Double> oMapPrices);
 
-	Double CalculateVolumeWeighStock(Map<String, Integer> oMapInputValues, List<Trades> listTradesRegistration);
+	Double CalculateVolumeWeighStock(Map<String, Double> oMapInputValues, List<Trades> listTradesRegistration);
 
 	Double CalculateGbceIndex(Map<String, Double> oMapPrice);
 
-		List<Stocks> calculateDividendYieldAndPeRatio(Map<String, Integer> oMapInputValues,
+		List<Stocks> calculateDividendYieldAndPeRatio(Map<String, Double> oMapInputValues,
 			Map<String, Double> oMapPrices);
 
 	

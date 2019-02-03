@@ -22,17 +22,17 @@ public class CalculationFacadeImpl implements CalculationFacade{
 	List<Stocks> oListStocks;
 
 	@Override
-	public List<Stocks> calculateDividendYieldAndPeRatio(Map<String,Integer> oMapInputValues,Map<String,Double> oMapPrices){
+	public List<Stocks> calculateDividendYieldAndPeRatio(Map<String,Double> oMapInputValues,Map<String,Double> oMapPrices){
 		
 		oListStocks = new ArrayList<Stocks>();
-		oMapInputValues.forEach((k, v) -> oListStocks.add(calculationService.calculateDividendYieldAndPeRatio(k.toString(), Integer.parseInt(v.toString()),oMapPrices)));
+		oMapInputValues.forEach((k, v) -> oListStocks.add(calculationService.calculateDividendYieldAndPeRatio(k.toString(), Double.parseDouble(v.toString()),oMapPrices)));
   		return oListStocks;
 		
 	}
 
 
 	@Override
-	public Trades recordTrade(String operationType, Map<String, Integer> oMapInputValues,Map<String, Double> oMapPrices) {
+	public Trades recordTrade(String operationType, Map<String, Double> oMapInputValues,Map<String, Double> oMapPrices) {
 		
 		Trades trade = new Trades();
 		trade = calculationService.recordTrade(operationType,oMapInputValues,oMapPrices);
@@ -42,7 +42,7 @@ public class CalculationFacadeImpl implements CalculationFacade{
 	}
 
 	@Override
-	public Double CalculateVolumeWeighStock(Map<String, Integer> oMapInputValues, List<Trades> listTradesRegistration) {
+	public Double CalculateVolumeWeighStock(Map<String, Double> oMapInputValues, List<Trades> listTradesRegistration) {
 		
 		Double volumeWeighIndex = 0.0;
 		volumeWeighIndex = calculationService.calculateVolumeWeighStock(oMapInputValues, listTradesRegistration);
