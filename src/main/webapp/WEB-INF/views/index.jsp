@@ -19,12 +19,12 @@
 		<p></p>
 		<p></p>
 		<form class="form-inline" id="formShares" name="formShares"
-			style="width: 50%; margin: auto; text-align: center;">
+			style="width: 55%; margin: auto; text-align: center;">
 
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<label for="exampleFormControlSelect1">Operation Type:&nbsp;
+				<label >&nbsp;Operation Type:&nbsp;
 				</label> <select class="form-control" name="operationType"
-					id="operationType" style="width: 135px; height: 35px;">
+					id="operationType" style="width: 140px; height: 35px;">
 					<option value="BUY" selected>Buy</option>
 
 					<option value="SELL">Sell</option>
@@ -38,87 +38,86 @@
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
+			
+			
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<input type="number"
+				<b>TEA -</b> &nbsp;<input type="number"
 					id="TeaAmmount" name="TeaAmmount" class="form-control"
 					placeholder="Ammount of Tea" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
+			-
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<input type="number" id="TeaPrice" name="TeaPrice"
-					class="form-control" placeholder="TEA PRICE"
+					class="form-control" placeholder="TEA Price"
 					pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="" step="any">
+					style="width: 200px; height: 30px;" min="0" value="" min="0" step="any">
 			</div>
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<input type="number"
+				<b>POP -</b> &nbsp;<input type="number"
 					id="PopAmmount" name="PopAmmount" class="form-control"
 					placeholder="Ammount of POP" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="">
+					style="width: 200px; height: 30px;" min="0" min="0" value="">
 			</div>
+			-
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<input type="number" id="PopPrice" name="PopPrice"
-					class="form-control" placeholder="POP PRICE"
+					class="form-control" placeholder="POP Price"
 					pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="" step="any">
+					style="width: 200px; height: 30px;" min="0" value="" min="0" step="any">
 			</div>
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<input type="number"
+				<b>ALE -</b> &nbsp;<input type="number"
 					id="AleAmmount" name="AleAmmount" class="form-control"
 					placeholder="Ammount of ALE" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="">
+					style="width: 200px; height: 30px;" min="0" min="0" value="">
 			</div>
+			-
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<input type="number" id="AlePrice" name="AlePrice"
-					class="form-control" placeholder="ALE PRICE"
+					class="form-control" placeholder="ALE Price"
 					pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="" step="any">
+					style="width: 200px; height: 30px;" min="0" value="" min="0" step="any">
 			</div>
 
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<input type="number"
+				<b>GIN - </b>&nbsp;<input type="number"
 					id="GinAmmount" name="GinAmmount" class="form-control"
 					placeholder="Ammount of GIN" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
+			-
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<input type="number" id="GinPrice" name="GinPrice"
-					class="form-control" placeholder="GIN PRICE"
+					class="form-control" placeholder="GIN Price"
 					pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="" step="any">
+					style="width: 200px; height: 30px;" min="0" value="" min="0" step="any">
 			</div>
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
-				<input type="number"
+				<b>JOE -</b> &nbsp;<input type="number"
 					id="JoeAmmount" name="JoeAmmount" class="form-control"
 					placeholder="Ammount of JOE" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
+			-
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<input type="number" id="JoePrice" name="JoePrice"
-					class="form-control" placeholder="JOE PRICE"
+					class="form-control" placeholder="JOE Price"
 					pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
-					style="width: 200px; height: 30px;" min="0" value="" step="any">
+					style="width: 200px; height: 30px;" min="0" value="" min="0" step="any">
 			</div>
 
 			
-			
-			
-			
-			
-
-
-
-
 		</form>
 		<div class="col-sm-4"
 			style="text-align: center; margin: 0 auto; padding: 2%;">
