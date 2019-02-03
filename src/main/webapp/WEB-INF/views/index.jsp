@@ -34,7 +34,7 @@
 				<input type="checkbox" id="hiddenInputCheck" name="hiddenInputCheck" value="TEA"
 					checked disabled /> - TEA &nbsp;<input type="number"
 					id="hiddenInput" name="hiddenInput" class="form-control"
-					placeholder="Ammount of Tea" pattern="/^-?\d+\.?\d*$/"
+					placeholder="" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
@@ -43,7 +43,7 @@
 			<div class="form-group" style="margin: 0 auto; padding: 4px;">
 				<b>TEA -</b> &nbsp;<input type="number"
 					id="TeaAmmount" name="TeaAmmount" class="form-control"
-					placeholder="Ammount of Tea" pattern="/^-?\d+\.?\d*$/"
+					placeholder="Ammount of TEA" pattern="/^-?\d+\.?\d*$/"
 					onKeyPress="if(this.value.length==9) return false;"
 					style="width: 200px; height: 30px;" min="0" value="">
 			</div>
